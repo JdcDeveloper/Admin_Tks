@@ -8,6 +8,8 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'My Web Application',
+	//controlador por defecto 
+	'defaultController' => 'login', 
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -20,7 +22,10 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		// la herramienta generadora de codigo
+		// esta es la herramienta generadora de codigo
+		//nos vamos a la ruta ejemplo localhost/Admin_Tks/web_app/gii
+		//y metemos la clave que elegimos
+		//para crear un crud primero crear el modelo
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'123',

@@ -1376,7 +1376,3 @@ import swal from 'sweetalert2.all.min.js';
    
 </body>
 </html>
-
-
-
-
