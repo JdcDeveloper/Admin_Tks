@@ -1,0 +1,144 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.6 (Ubuntu 10.6-0ubuntu0.18.04.1)
+-- Dumped by pg_dump version 10.6 (Ubuntu 10.6-0ubuntu0.18.04.1)
+
+-- Started on 2019-02-10 19:12:22 -04
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 8 (class 2615 OID 16385)
+-- Name: jonathan; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA jonathan;
+
+
+ALTER SCHEMA jonathan OWNER TO postgres;
+
+--
+-- TOC entry 1 (class 3079 OID 13081)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2960 (class 0 OID 0)
+-- Dependencies: 1
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 198 (class 1259 OID 16394)
+-- Name: usuarios; Type: TABLE; Schema: jonathan; Owner: postgres
+--
+
+CREATE TABLE jonathan.usuarios (
+    id integer NOT NULL,
+    nombre character varying(40) NOT NULL,
+    email character varying(40) NOT NULL,
+    password character varying(60) NOT NULL,
+    estado character varying(40) NOT NULL,
+    municipio character varying(40) NOT NULL,
+    parroquia character varying(40) NOT NULL,
+    role character varying(30) NOT NULL,
+    fecha time with time zone NOT NULL
+);
+
+
+ALTER TABLE jonathan.usuarios OWNER TO postgres;
+
+--
+-- TOC entry 197 (class 1259 OID 16392)
+-- Name: usuarios_id_seq; Type: SEQUENCE; Schema: jonathan; Owner: postgres
+--
+
+CREATE SEQUENCE jonathan.usuarios_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE jonathan.usuarios_id_seq OWNER TO postgres;
+
+--
+-- TOC entry 2961 (class 0 OID 0)
+-- Dependencies: 197
+-- Name: usuarios_id_seq; Type: SEQUENCE OWNED BY; Schema: jonathan; Owner: postgres
+--
+
+ALTER SEQUENCE jonathan.usuarios_id_seq OWNED BY jonathan.usuarios.id;
+
+
+--
+-- TOC entry 2827 (class 2604 OID 16397)
+-- Name: usuarios id; Type: DEFAULT; Schema: jonathan; Owner: postgres
+--
+
+ALTER TABLE ONLY jonathan.usuarios ALTER COLUMN id SET DEFAULT nextval('jonathan.usuarios_id_seq'::regclass);
+
+
+--
+-- TOC entry 2952 (class 0 OID 16394)
+-- Dependencies: 198
+-- Data for Name: usuarios; Type: TABLE DATA; Schema: jonathan; Owner: postgres
+--
+
+COPY jonathan.usuarios (id, nombre, email, password, estado, municipio, parroquia, role, fecha) FROM stdin;
+2	jonathan	admin@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	san jose	admin	19:10:25-07
+3	maria	maria@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	quinta crespo	user	19:10:25-07
+4	jose	jose@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	candelaria	user	19:10:25-07
+5	cristobal	cristobal@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	san juan	user	19:10:25-07
+6	pacheco	pacheco@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	san martin	user	19:10:25-07
+7	gonzalo	gonzalo@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	altagracia	user	19:10:25-07
+8	cristina	cristina@hotmail.com	202cb962ac59075b964b07152d234b70	distrito federal	libertador	23 de enero	user	19:10:25-07
+\.
+
+
+--
+-- TOC entry 2962 (class 0 OID 0)
+-- Dependencies: 197
+-- Name: usuarios_id_seq; Type: SEQUENCE SET; Schema: jonathan; Owner: postgres
+--
+
+SELECT pg_catalog.setval('jonathan.usuarios_id_seq', 8, true);
+
+
+--
+-- TOC entry 2829 (class 2606 OID 16399)
+-- Name: usuarios pk_usuarios; Type: CONSTRAINT; Schema: jonathan; Owner: postgres
+--
+
+ALTER TABLE ONLY jonathan.usuarios
+    ADD CONSTRAINT pk_usuarios PRIMARY KEY (id);
+
+
+-- Completed on 2019-02-10 19:12:22 -04
+
+--
+-- PostgreSQL database dump complete
+--
+
