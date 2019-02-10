@@ -10,37 +10,37 @@
   <!-- cargar jquery al principio y scripts principales -->
 
   <!-- jQuery 3 -->
-  <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jquery/dist/jquery.min.js"></script>
 
 
 
 
 
   <!-- Datatable js -->
-  <script src="assets/lib/js/jquery.dataTables.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl;?>/public/lib/js/jquery.dataTables.min.js"></script>
 
   
   <!-- sweet alert2 -->
-  <!--  <script src="<?php //echo base_url();?>assets/lib/js/sweetalert2.min.js"></script>  -->
+  <!--  <script src="<?php //echo base_url();?><?php //echo Yii::app()->request->baseUrl;?>public/lib/js/sweetalert2.min.js"></script>  -->
 
-  <!--  <script src="<?php //echo base_url();?>assets/lib/js/sweetalert2.all.min.js"></script>  -->
+  <!--  <script src="<?php //echo base_url();?><?php //echo Yii::app()->request->baseUrl;?>public/lib/js/sweetalert2.all.min.js"></script>  -->
 
 
   <!-- datepicker -->
-  <script src="assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 
   <!-- jQuery UI 1.11.4 -->
-  <script src="assets/bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jquery-ui/jquery-ui.min.js"></script>
 
 
   <!-- Bootstrap 3.3.7 -->
-  <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
   <!-- sweet alert2 -->
-  <!--  <script src="<?php //echo base_url();?>assets/lib/js/sweetalert2.min.js"></script>  -->   
+  <!--  <script src="<?php //echo base_url();?><?php //echo Yii::app()->request->baseUrl;?>public/lib/js/sweetalert2.min.js"></script>  -->   
 
-  <!--   <script src="<?php //echo base_url();?>assets/lib/js/sweetalert2.all.min.js"></script>  -->
+  <!--   <script src="<?php //echo base_url();?><?php //echo Yii::app()->request->baseUrl;?>public/lib/js/sweetalert2.all.min.js"></script>  -->
 
   <!-- sweet alert2 -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script> -->
@@ -52,42 +52,42 @@
 
 
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="assets/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="assets/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
    folder instead of downloading all of them to reduce the load. -->
-   <link rel="stylesheet" href="assets/dist/css/skins/_all-skins.min.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/dist/css/skins/_all-skins.min.css">
    <!-- Morris chart -->
-   <link rel="stylesheet" href="assets/bower_components/morris.js/morris.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/morris.js/morris.css">
    <!-- jvectormap -->
-   <link rel="stylesheet" href="assets/bower_components/jvectormap/jquery-jvectormap.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jvectormap/jquery-jvectormap.css">
    <!-- Date Picker -->
-   <link rel="stylesheet" href="assets/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
    <!-- Daterange picker -->
-   <link rel="stylesheet" href="assets/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap-daterangepicker/daterangepicker.css">
    <!-- bootstrap wysihtml5 - text editor -->
-   <link rel="stylesheet" href="assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
 
    <!--  agregando estilos del login -->
 
    <!-- iCheck -->
-   <link rel="stylesheet" href="assets/plugins/iCheck/square/blue.css">
+   <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl;?>/public/plugins/iCheck/square/blue.css">
 
 
 
    <!-- Table styles -->
 
-   <link rel="stylesheet" type="text/css" href="assets/lib/css/jquery.dataTables.min.css"> 
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl;?>/public/lib/css/jquery.dataTables.min.css"> 
 
 
    <!--  sweet alert2 -->
-   <!--   <link rel="stylesheet" type="text/css" href="<?php //echo base_url();?>assets/lib/css/sweetalert2.min.css">  -->
+   <!--   <link rel="stylesheet" type="text/css" href="<?php //echo base_url();?><?php //echo Yii::app()->request->baseUrl;?>public/lib/css/sweetalert2.min.css">  -->
 
 
 
@@ -121,7 +121,7 @@
 
     // import * as swal from 'sweetalert';
 
-      // import swal from 'assets/lib/js/sweetalert2.all.min.js';
+      // import swal from '<?php //echo Yii::app()->request->baseUrl;?>public/lib/js/sweetalert2.all.min.js';
 
      
 
@@ -137,7 +137,7 @@
   <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
 
 
-  <!--   <script src="<?php //echo base_url();?>assets/lib/js/sweetalert2.all.min.js"></script>  -->
+  <!--   <script src="<?php //echo base_url();?><?php //echo Yii::app()->request->baseUrl;?>public/lib/js/sweetalert2.all.min.js"></script>  -->
 
 
 <!-- <script>
@@ -216,7 +216,7 @@ import swal from 'sweetalert2.all.min.js';
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Support Team
@@ -229,7 +229,7 @@ import swal from 'sweetalert2.all.min.js';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="assets/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -241,7 +241,7 @@ import swal from 'sweetalert2.all.min.js';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="assets/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Developers
@@ -253,7 +253,7 @@ import swal from 'sweetalert2.all.min.js';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="assets/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Sales Department
@@ -265,7 +265,7 @@ import swal from 'sweetalert2.all.min.js';
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="assets/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                           </div>
                           <h4>
                             Reviewers
@@ -402,13 +402,13 @@ import swal from 'sweetalert2.all.min.js';
       <!-- User Account: style can be found in dropdown.less -->
       <li class="dropdown user user-menu">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <img src="assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
           <span class="hidden-xs"></span>
         </a>
         <ul class="dropdown-menu">
           <!-- User image -->
           <li class="user-header">
-            <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
             <p>
              
@@ -463,7 +463,7 @@ import swal from 'sweetalert2.all.min.js';
         <!-- Sidebar user panel -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
             <p></p>
@@ -722,7 +722,7 @@ import swal from 'sweetalert2.all.min.js';
                     <li><!-- start message -->
                       <a href="#">
                         <div class="pull-left">
-                          <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Support Team
@@ -735,7 +735,7 @@ import swal from 'sweetalert2.all.min.js';
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="assets/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           AdminLTE Design Team
@@ -747,7 +747,7 @@ import swal from 'sweetalert2.all.min.js';
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="assets/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Developers
@@ -759,7 +759,7 @@ import swal from 'sweetalert2.all.min.js';
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="assets/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Sales Department
@@ -771,7 +771,7 @@ import swal from 'sweetalert2.all.min.js';
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="assets/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Reviewers
@@ -908,13 +908,13 @@ import swal from 'sweetalert2.all.min.js';
     <!-- User Account: style can be found in dropdown.less -->
     <li class="dropdown user user-menu">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <img src="assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+        <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
         <span class="hidden-xs"></span>
       </a>
       <ul class="dropdown-menu">
         <!-- User image -->
         <li class="user-header">
-          <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
           <p>
             
@@ -969,7 +969,7 @@ import swal from 'sweetalert2.all.min.js';
         <!-- Sidebar user panel -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
             <p></p>
@@ -1296,10 +1296,10 @@ import swal from 'sweetalert2.all.min.js';
  <!-- ./wrapper -->
 
  <!-- jQuery 3 -->
-<!--  <script src="<?php //echo base_url();?>assets/bower_components/jquery/dist/jquery.min.js"></script> -->
+<!--  <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jquery/dist/jquery.min.js"></script> -->
 
  <!-- jQuery UI 1.11.4 -->
-<!--  <script src="<?php //echo base_url();?>assets/bower_components/jquery-ui/jquery-ui.min.js"></script> -->
+<!--  <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jquery-ui/jquery-ui.min.js"></script> -->
  
  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
  <script>
@@ -1307,70 +1307,70 @@ import swal from 'sweetalert2.all.min.js';
 </script>
 
 <!-- Bootstrap 3.3.7 -->
-<!-- <script src="<?php //echo base_url();?>assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
 
 
 <!-- google charts -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-<script src="assets/js/charts.js"></script>   
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/js/charts.js"></script>   
 
 <!-- Morris.js charts -->
-<!-- <script src="<?php //echo base_url();?>assets/bower_components/raphael/raphael.min.js"></script>
-<script src="<?php //echo base_url();?>assets/bower_components/morris.js/morris.min.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/raphael/raphael.min.js"></script>
+<script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/morris.js/morris.min.js"></script> -->
 
 <!-- Sparkline -->
-<script src="assets//bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public//bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- jvectormap -->
-<!-- <script src="<?php //echo base_url();?>assets/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="<?php //echo base_url();?>assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script> -->
 
 <!-- jQuery Knob Chart -->
-<!-- <script src="<?php //echo base_url();?>assets/bower_components/jquery-knob/dist/jquery.knob.min.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jquery-knob/dist/jquery.knob.min.js"></script> -->
 
 <!-- daterangepicker -->
-<!-- <script src="<?php //echo base_url();?>assets/bower_components/moment/min/moment.min.js"></script>
-<script src="<?php //echo base_url();?>assets/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/moment/min/moment.min.js"></script>
+<script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script> -->
 
 <!-- datepicker -->
-<!-- <script src="<?php //echo base_url();?>assets/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script> -->
 
 <!-- Bootstrap WYSIHTML5 -->
-<script src="assets/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 <!-- Slimscroll -->
-<script src="assets/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="assets/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/bower_components/fastclick/lib/fastclick.js"></script>
 
 
 <!-- esta es la parte del sidebar para que funcione -->
 <!-- AdminLTE App -->
-<script src="assets/dist/js/adminlte.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/dist/js/adminlte.min.js"></script>
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<!-- <script src="<?php //echo base_url();?>assets/dist/js/pages/dashboard.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/dist/js/pages/dashboard.js"></script> -->
 
 <!-- AdminLTE for demo purposes -->
-<!-- <script src="<?php //echo base_url();?>assets/dist/js/demo.js"></script> -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/dist/js/demo.js"></script> -->
 
 
 <!-- lo del login
  -->
 <!-- iCheck -->
-<script src="assets/plugins/iCheck/icheck.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/plugins/iCheck/icheck.min.js"></script>
 
 
-<script src="assets/js/table.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/js/table.js"></script>
 
-<!-- <script src="<?php //echo base_url();?>assets/js/datepicker.js"></script>  -->
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/js/datepicker.js"></script>  -->
 
 
 
 <!-- scripts main -->
-<script src="assets/js/main.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl;?>/public/js/main.js"></script>
 
 
-<!-- <script src="<?php //echo base_url();?>assets/js/charts.js"></script>    --> 
+<!-- <script src="<?php //echo base_url();?><?php echo Yii::app()->request->baseUrl;?>/public/js/charts.js"></script>    --> 
 
 
    

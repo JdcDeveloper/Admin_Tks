@@ -1049,3 +1049,57 @@ Stack trace:
 REQUEST_URI=/Admin_Tks/web_app/assets/js/main.js
 HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
 ---
+2019/02/10 13:44:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 13:44:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 13:44:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 13:44:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 13:44:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 13:44:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
