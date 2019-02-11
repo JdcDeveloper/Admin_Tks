@@ -2522,3 +2522,363 @@ Stack trace:
 REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
 HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/dashboard
 ---
+2019/02/10 15:15:57 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii/default/index
+---
+2019/02/10 15:17:34 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:18:07 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:18:20 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:19:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:25:03 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:33:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:33:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:33:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:33:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:33:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:33:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:33:44 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:35:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:35:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:35:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:35:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:35:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:35:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:35:30 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii
+---
+2019/02/10 15:36:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:36:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:36:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:36:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/charts.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/chart...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/charts.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:36:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/table.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/table...')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/table.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:36:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "public/js/main.js". in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('public/js/main....')
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Admin_Tks/web_app/public/js/main.js
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/
+---
+2019/02/10 15:36:17 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/jonathan/lampstack-7.1.26-0/apache2/htdocs/Admin_Tks/web_app/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Admin_Tks/web_app/gii/model/index
+HTTP_REFERER=http://localhost:8080/Admin_Tks/web_app/gii/default/index
+---

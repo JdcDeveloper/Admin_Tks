@@ -7,8 +7,16 @@ return array(
 
 	'connectionString' => 'pgsql:host=localhost;port=5432;dbname=Admin_Tks',	
 	'emulatePrepare' => true,
-	'username' => 'root',
-	'password' => '',
+	'username' => 'postgres',
+	'password' => '123',
 	'charset' => 'utf8',
 	
 );
+
+
+ // 'db'=>array(
+ //   'connectionString' => 'pgsql:host=localhost;port=5432;dbname= mibasededatos ',
+ //   'username' => 'postgres',
+ //   'password' => 'miclave',
+ //   'charset' => 'utf8',
+ //  ),
